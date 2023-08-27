@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="./fist-page/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ART</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <img id="open-left-bar" src="./images/menu.png" height="35px" width="35px">
+                
+            </div>
+            <div class="nav-mid">
+                <h1>ART</h1>
+
+            </div>
+            <div class="nav-right">
+                <a href="#"><h1>Log in</h1></a>
+                <a href ="#"><img src="./images/log-in.png" width="25px" height="25px"></a>
+            </div>
+        </nav>
+    </header>
+    <div id="left-bar" class="left-bar">
+        <div class="close-left-bar-container">
+            <img id="close-left-bar" src="./images/close.png">
+        </div>
+        
+    </div>
+    <main>
+        <div class="banner">
+        </div>
+
+        <div class="container-1">
+            <div class="romanticism-title">
+                <h1>Romanticism</h1>
+            </div>
+            <div class="romanticism-paints">
+                <img src="./images/romanticism-1.jpg" class="romanticism-paint-1 paint" >
+                <img src="./images/romanticism-2.jpg" class="romanticism-paint-2 paint" >
+                <img src="./images/romanticism-3.jpg" class="romanticism-paint-3 paint" >
+            </div>
+        </div>
+
+        <div class="container-2">
+        </div>
+    </main>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const openMenu = document.getElementById("open-left-bar");
+        const closeMenu = document.getElementById("close-left-bar");
+        const leftMenu = document.getElementById("left-bar");
+
+        openMenu.style.transition ="all 0.3s"
+        closeMenu.style.transition ="all 0.3s"
+        
+        
+        
+        function openLeftBar() {
+            
+            openMenu.style.opacity = "0";
+            leftMenu.style.width = "30rem";
+            closeMenu.style.opacity = "1";
+            
+        }
+
+        function closeLeftBar() {
+            openMenu.style.opacity = "1";
+            leftMenu.style.width = "0px";
+            closeMenu.style.opacity = "0";
+        }
+
+        openMenu.addEventListener("click", openLeftBar);
+        closeMenu.addEventListener("click", closeLeftBar);
+
+
+    </script>
+</body>
+</html>
