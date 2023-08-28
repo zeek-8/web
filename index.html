@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blueprint</title>
     <link href="./first-page/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/xic6vle.css">
 </head>
 <body>
 
@@ -27,33 +28,37 @@
             </div>
         </nav>
     </header>
+    <!-- Interactive Nav Menu-->
     <div id="nav-menu" class="nav-menu">
-        <div class="close-menu-container">
-            <img id="close-nav-menu-logo" class="close-nav-menu-logo" src="./images/close.png">
+        <div id="types-of-art-container">
+            <div class="nav-type-art"><a id="anchor-type-art" href="#Romanticism-title-container">Romanticism</a></div>
+            <div class="nav-type-art"><a class="anchor-type-art" hreft="#">Classicism</a></div>
         </div>
     </div>
-
 
     <!-- Main -->
     <main>
         <!-- Banner -->
         <div class="container-2">
-            <h1>Welcome to my page</h1>
         </div>
         
         <!-- Container -->
         <div class="container-3">
-            <p class="color-3"> rgb(145, 170, 215)</p>
-            <h2>Content</h2>
-            <p>(Place content here)</p>
+            <div id="Romanticism-title-container">
+                <h2 id="Romanticism-title">Romanticism</h2>
+            </div>
+            <div id="Romanticism-paintings-container">
+                <img class="Romanticism-paint Romanticism-painting-one" src="./images/romanticism-1.jpg">
+                <img class="Romanticism-paint Romanticism-painting-two" src="./images/romanticism-2.jpg">
+                <img class="Romanticism-paint Romanticism-painting-three" src="./images/romanticism-3.jpg">
+            </div>
         </div>
     </main>
-
 
     <!-- Footer-->
     <footer>
         <div class="container-4">
-            <p class="color-4"> rgb(179, 145, 215)</p>
+           
             <h2>Footer</h2>
             <p>(Place the footer)</p>
         </div> 
@@ -63,25 +68,34 @@
 
     <script>
         const openLogo = document.getElementById("open-nav-menu-logo")
-        const closeLogo = document.getElementById("close-nav-menu-logo")
+        const openLogoBorder = document.getElementsByClassName("open-nav-menu-border")
         const navMenu = document.getElementById("nav-menu")
+        const typeContainer = document.getElementById("types-of-art-container")
+        const typeArt = document.getElementsByClassName("anchor-type-art")
+      
 
-        closeLogo.style.transition = "all 0.4s"
+        function toggleNavMenu() {
 
-        function openNavMenu() {
-            openLogo.style.opacity = "0"
-            navMenu.style.width = "20%"
-            closeLogo.style.opacity = "1"
+            if (navMenu.style.height === "30rem") {
+                navMenu.style.height = "0rem";
+                typeContainer.style.opacity = "0"
+                navMenu.style.transition = "all 0.7s ease-in"
+                typeContainer.style.visibility = "hidden"
+                
+                
+                
+            } else {
+                navMenu.style.height = "30rem";
+                typeContainer.style.opacity = "1"
+                navMenu.style.transition = "all 0.4s"
+                typeContainer.style.visibility = "visible"
+                
+            } 
         }
 
-        function closeNavMenu() {
-            openLogo.style.opacity = "1"
-            closeLogo.style.opacity = "0"
-            navMenu.style.width = "0%"
-        }
 
-        openLogo.addEventListener("click", openNavMenu)
-        closeLogo.addEventListener("click", closeNavMenu)
+        openLogo.addEventListener("click", toggleNavMenu);
+        typeArt.addEventListener("click", closeAll)
     </script>
 </body>
 </html>

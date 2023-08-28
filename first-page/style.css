@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: heebo, sans-serif;
 }
 
 /*--------------------------------- NAV BAR  ---------------------------------*/
@@ -18,7 +18,7 @@ header {
     top: 0rem;
     height: 8rem;
     width: 100%;
-    z-index: 100;
+    z-index: 1000;
 }
 
 nav {
@@ -28,7 +28,6 @@ nav {
     height: 100%;
     width: 100%;
     backdrop-filter: blur(1rem);
-
 }
 
 
@@ -55,7 +54,12 @@ nav {
 }
 
 .open-nav-menu-logo:hover {
-    filter: invert(20%);
+    opacity: 0.7;
+}
+
+
+.open-nav-menu-logo:active {
+    opacity: 0.5;
 }
 
 nav h1 {
@@ -81,34 +85,49 @@ nav h1 {
 
 .nav-menu {
     display: flex;
-    position: fixed;
-    top: 0;
-    height: 100%;
-    width: 0%;
-    z-index: 200;
+    flex-direction: column;
+    position: absolute;
+    top: 8rem;
+    height: 0rem;
+    width: 30rem;
+    z-index: 100;
     backdrop-filter: blur(1rem);
-    transition: all 0.7s;
+    transition: all 0.4s;
+    background-color: rgba(240, 248, 255, 0.399);
 }
 
-.close-menu-container {
+#types-of-art-container {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    height: 3rem;
-    margin-right: 1rem;
-}
-
-.close-nav-menu-logo {
-    height: 2rem;
-    width: 2rem;
-    cursor: pointer;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    visibility: hidden;
     opacity: 0;
+    transition: opacity 0.7s ;
 }
 
-.close-nav-menu-logo:hover {
-    filter: invert(20%);
+.nav-type-art {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    width: 100%;
+    border-bottom: 1px solid black;
+    transition: all 0.4s;
+    cursor: pointer;
 }
+.nav-type-art:hover {
+    background-color: rgba(240, 248, 255, 0.562);
+}
+
+.nav-type-art a {
+    font-size: 4rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+
 
 /*--------------------------------- BANNER  ---------------------------------*/
 
@@ -116,51 +135,56 @@ nav h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70rem;
+    height: 75rem;
     width: 100%;
     background-image: url("../images/banner.jpg");
     background-position: center;
     background-size: cover;
 }
 
-.container-2 h1 {
-    font-size: 5rem;
-    color: #fff;
-}
-
 /*--------------------------------- MAIN  ---------------------------------*/
 
-.color-3 {
-    font-size: 40px;
-    color: white;
-    position: absolute;
-    top: 58rem;
-    left: 0; 
-}
+
 
 .container-3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    height: 50rem;
-    background-color: rgb(145, 170, 215);
+    height: 100rem;
+    background-color: rgb(255, 255, 255);
 }
 
-.container-3 h2 {
-    font-size: 5rem;
+
+/*--------------------- Romanticism  ---------------------*/
+
+#Romanticism-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    width: 100%;
+}
+
+#Romanticism-title {
+    font-size: 6rem;
+    text-shadow: -1px 1px 3px;
+}
+
+#Romanticism-paintings-container {
+    display: flex;
+    height: 60%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.Romanticism-paint {
+    height: auto;
+    width: 400px;
+    box-shadow: 0px 0px 1rem;
+
 }
 
 /*--------------------------------- FOOTER  ---------------------------------*/
-
-.color-4 {
-    font-size: 4rem;
-    color: white;
-    position: absolute;
-    top: 108rem;
-    left: 0; 
-}
 
 .container-4 {
     display: flex;
