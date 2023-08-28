@@ -1,177 +1,177 @@
-/* Global Variables*/
-html {
-    font-size: 10px;
-}
+/*--------------------------------- Universal Selector ---------------------------------*/
 
 * {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    font-size: 10px;
 }
 
-/* Keyframes */
-
-@keyframes animate {
-
-    0% {
-        opacity: 0;
-    }
-
-
-    50% {
-        opacity: 1;
-    }
-
-
-    100% {
-        opacity: 0;
-    }
+body {
+    font-family: sans-serif;
 }
 
-/*-----head-----*/
-
-/*--nav--*/
+/*--------------------------------- NAV BAR  ---------------------------------*/
 
 header {
     position: absolute;
+    top: 0rem;
+    height: 8rem;
     width: 100%;
-    height: 6rem;
-    font-family: sans-serif;
-    font-size: 3rem;
-    backdrop-filter: blur(8px);
+    z-index: 100;
 }
 
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
     height: 100%;
-
-}
-
-nav div {
-    display: flex;
-    align-items: center;
-}
-
-#open-left-bar {
-    margin-right: 76.21px;
-}
-
-#open-left-bar:hover {
-    margin-right: 76.21px;
-    cursor: pointer;
-    filter: invert(30%);
-}
-
-.nav-right a {
-    color: black;
-    text-decoration: none;
-    margin-right: 7px;
-}
-
-.nav-right a h1 {
-    font-size: 3rem;
-    font-weight: 500;
-}
-
-#left-bar {
-    position: fixed;
-    height: 100%;
-    width: 0;
-    backdrop-filter: blur(8px);
-    transition: width 0.7s;
-    z-index: 100;
-}
-
-#close-left-bar {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    transition: filter 0.3s;
-}
-
-#close-left-bar:hover {
-    cursor: pointer;
-    filter: invert(30%)
-}
-#close-left-bar:active {
-    filter: invert(50%);
-}
-
-
-.close-left-bar-container {
-    display: flex;
-    height: 5%;
     width: 100%;
-    justify-content: flex-end;
-    align-items: center;
+    backdrop-filter: blur(1rem);
+
 }
 
-/*-----body-----*/
 
-/*--banner--*/
 
-.banner {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    height: 75rem;
-    background-image: url("../images/banner.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.container-1 {
-    height: 74.5rem;
-    width: 100%;
-    background-color: #401508;
-}
-
-.romanticism-title {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 6rem;
-    width: 100%;
-    background-color: #1F1609;
-    backdrop-filter: blur(8px);
-    box-shadow: -1px 0px 11px 4px;
-}
-
-.romanticism-title h1 {
-    margin-left: 20px;
-    font-family: sans-serif;
-    font-size: 4rem;
-    color: rgb(255, 255, 255);
-    font-weight: 700;
-}
-
-.romanticism-paints {
-    display: flex;
-    height: 90%;
-    width: 100%;
+.left-nav {
+    display: inline-flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.romanticism-paint-1 {
-    width: 400px;
+.open-nav-menu-container {
+    display: flex;
+    width: 148.99px;
     height: auto;
+    justify-content: center;
+    align-items: center;
 }
 
-.romanticism-paint-2 {
-    width: 400px;
-    height: auto;
+.open-nav-menu-logo {
+    height: 3.5rem;
+    width: 3.5rem;
+    cursor: pointer;
+    transition: opacity 0.4s;
 }
 
-.romanticism-paint-3 {
-    width: 400px;
-    height: auto;
+.open-nav-menu-logo:hover {
+    filter: invert(20%);
 }
 
-.paint {
-    box-shadow: 0px 0px 20px 4px;
+nav h1 {
+    font-size: 6rem;
+}
+
+.right-nav {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#log-in {
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+#log-in-logo {
+    height: 3rem;
+    width: 3rem;
+    margin-left: 1rem;
+}
+
+.nav-menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    z-index: 200;
+    backdrop-filter: blur(1rem);
+    transition: all 0.7s;
+}
+
+.close-menu-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+.close-nav-menu-logo {
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.close-nav-menu-logo:hover {
+    filter: invert(20%);
+}
+
+/*--------------------------------- BANNER  ---------------------------------*/
+
+.container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70rem;
+    width: 100%;
+    background-image: url("../images/banner.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.container-2 h1 {
+    font-size: 5rem;
+    color: #fff;
+}
+
+/*--------------------------------- MAIN  ---------------------------------*/
+
+.color-3 {
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    top: 58rem;
+    left: 0; 
+}
+
+.container-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50rem;
+    background-color: rgb(145, 170, 215);
+}
+
+.container-3 h2 {
+    font-size: 5rem;
+}
+
+/*--------------------------------- FOOTER  ---------------------------------*/
+
+.color-4 {
+    font-size: 4rem;
+    color: white;
+    position: absolute;
+    top: 108rem;
+    left: 0; 
+}
+
+.container-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+    width: 100%;
+    background-color: rgb(179, 145, 215);
+}
+
+.container-4 h2 {
+    font-size: 5rem;
 }

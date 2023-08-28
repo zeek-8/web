@@ -1,95 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="./first-page/style.css" rel="stylesheet">
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ART</title>
+    <title>Blueprint</title>
+    <link href="./first-page/style.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="nav-left">
-                <img id="open-left-bar" src="./images/menu.png" height="35px" width="35px">
-                
-            </div>
-            <div class="nav-mid">
-                <h1>ART</h1>
 
+
+    <!-- Header -->
+    <header>
+        <!-- Nav Bar-->
+        <nav>
+            <div class="left-nav">
+                <div class="open-nav-menu-container">
+                    <img id="open-nav-menu-logo" class="open-nav-menu-logo" src="./images/menu.png">
+                </div>
             </div>
-            <div class="nav-right">
-                <a href="#"><h1>Log in</h1></a>
-                <a href ="#"><img src="./images/log-in.png" width="25px" height="25px"></a>
+            <h1>ART</h1>
+            <div class="right-nav">
+                <h2 id="log-in">Log in</h2>
+                <img id="log-in-logo" src="./images/log-in.png">
+
             </div>
         </nav>
     </header>
-    <div id="left-bar" class="left-bar">
-        <div class="close-left-bar-container">
-            <img id="close-left-bar" src="./images/close.png">
+    <div id="nav-menu" class="nav-menu">
+        <div class="close-menu-container">
+            <img id="close-nav-menu-logo" class="close-nav-menu-logo" src="./images/close.png">
         </div>
     </div>
+
+
+    <!-- Main -->
     <main>
-        <div class="banner">
-        </div>
-
-        <div class="container-1">
-            <div class="romanticism-title">
-                <h1>Romanticism</h1>
-            </div>
-            <div class="romanticism-paints">
-                <img src="./images/romanticism-1.jpg" class="romanticism-paint-1 paint" >
-                <img src="./images/romanticism-2.jpg" class="romanticism-paint-2 paint" >
-                <img src="./images/romanticism-3.jpg" class="romanticism-paint-3 paint" >
-            </div>
-        </div>
-
+        <!-- Banner -->
         <div class="container-2">
+            <h1>Welcome to my page</h1>
+        </div>
+        
+        <!-- Container -->
+        <div class="container-3">
+            <p class="color-3"> rgb(145, 170, 215)</p>
+            <h2>Content</h2>
+            <p>(Place content here)</p>
         </div>
     </main>
-    
 
 
+    <!-- Footer-->
+    <footer>
+        <div class="container-4">
+            <p class="color-4"> rgb(179, 145, 215)</p>
+            <h2>Footer</h2>
+            <p>(Place the footer)</p>
+        </div> 
+    </footer>
 
-
-
-
-
-
-
-
-
-
-
-
+<!-- End -->
 
     <script>
-        const openMenu = document.getElementById("open-left-bar");
-        const closeMenu = document.getElementById("close-left-bar");
-        const leftMenu = document.getElementById("left-bar");
+        const openLogo = document.getElementById("open-nav-menu-logo")
+        const closeLogo = document.getElementById("close-nav-menu-logo")
+        const navMenu = document.getElementById("nav-menu")
 
-        openMenu.style.transition ="all 0.3s"
-        closeMenu.style.transition ="all 0.3s"
-        
-        
-        
-        function openLeftBar() {
-            
-            openMenu.style.opacity = "0";
-            leftMenu.style.width = "30rem";
-            closeMenu.style.opacity = "1";
-            
+        closeLogo.style.transition = "all 0.4s"
+
+        function openNavMenu() {
+            openLogo.style.opacity = "0"
+            navMenu.style.width = "20%"
+            closeLogo.style.opacity = "1"
         }
 
-        function closeLeftBar() {
-            openMenu.style.opacity = "1";
-            leftMenu.style.width = "0px";
-            closeMenu.style.opacity = "0";
+        function closeNavMenu() {
+            openLogo.style.opacity = "1"
+            closeLogo.style.opacity = "0"
+            navMenu.style.width = "0%"
         }
 
-        openMenu.addEventListener("click", openLeftBar);
-        closeMenu.addEventListener("click", closeLeftBar);
-
-
+        openLogo.addEventListener("click", openNavMenu)
+        closeLogo.addEventListener("click", closeNavMenu)
     </script>
 </body>
 </html>
