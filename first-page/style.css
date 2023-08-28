@@ -89,7 +89,7 @@ nav h1 {
     position: absolute;
     top: 8rem;
     height: 0rem;
-    width: 30rem;
+    width: 275px;
     z-index: 100;
     backdrop-filter: blur(1rem);
     transition: all 0.4s;
@@ -103,7 +103,7 @@ nav h1 {
     align-items: flex-start;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.7s ;
+    transition: opacity 0.7s; 
 }
 
 .nav-type-art {
@@ -124,7 +124,7 @@ nav h1 {
     font-size: 4rem;
     text-decoration: none;
     color: black;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 
@@ -148,7 +148,7 @@ nav h1 {
 
 .container-3 {
     width: 100%;
-    height: 100rem;
+    height: 75rem;
     background-color: rgb(255, 255, 255);
 }
 
@@ -159,18 +159,19 @@ nav h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20rem;
+    height: 14rem;
     width: 100%;
 }
 
 #Romanticism-title {
     font-size: 6rem;
+    font-weight: 500;
     text-shadow: -1px 1px 3px;
 }
 
 #Romanticism-paintings-container {
     display: flex;
-    height: 60%;
+    height: 70%;
     width: 100%;
     justify-content: space-around;
     align-items: center;

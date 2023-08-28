@@ -31,7 +31,7 @@
     <!-- Interactive Nav Menu-->
     <div id="nav-menu" class="nav-menu">
         <div id="types-of-art-container">
-            <div class="nav-type-art"><a id="anchor-type-art" href="#Romanticism-title-container">Romanticism</a></div>
+            <div class="nav-type-art"><a class="anchor-type-art" href="#Romanticism-title-container">Romanticism</a></div>
             <div class="nav-type-art"><a class="anchor-type-art" hreft="#">Classicism</a></div>
         </div>
     </div>
@@ -82,8 +82,6 @@
                 navMenu.style.transition = "all 0.7s ease-in"
                 typeContainer.style.visibility = "hidden"
                 
-                
-                
             } else {
                 navMenu.style.height = "30rem";
                 typeContainer.style.opacity = "1"
@@ -93,9 +91,21 @@
             } 
         }
 
+        function closeMenu() {
+            navMenu.style.height = "0rem";
+            typeContainer.style.opacity = "0";
+            navMenu.style.transition = "all 0s ease-in";
+            typeContainer.style.visibility = "hidden";
+        }
+
+
 
         openLogo.addEventListener("click", toggleNavMenu);
-        typeArt.addEventListener("click", closeAll)
+
+        for (let i = 0; i < typeArt.length; i++) {
+            typeArt[i].addEventListener("click", closeMenu);
+        }   
+
     </script>
 </body>
 </html>
