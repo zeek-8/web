@@ -90,19 +90,10 @@
             } 
         }
 
-        function closeMenu() {
-            navMenu.style.height = "0rem";
-            typeContainer.style.opacity = "0";
-            navMenu.style.transition = "all 0s ease-in";
-            typeContainer.style.visibility = "hidden";
-        }
-
-
-
         openLogo.addEventListener("click", toggleNavMenu);
 
         for (let i = 0; i < typeArt.length; i++) {
-            typeArt[i].addEventListener("click", closeMenu);
+            typeArt[i].addEventListener("click", toggleNavMenu);
         }   
 
     </script>
