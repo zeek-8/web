@@ -37,13 +37,9 @@ body {
 .container-1 h1 {
     display: flex;
     font-size: 7rem;
-<<<<<<< HEAD
-    margin: 8rem 0rem;
-=======
     height: 30rem;
     justify-content: center;
     align-items: center;
->>>>>>> main
 }
 
 
@@ -51,21 +47,11 @@ body {
 
 .info {
     display: flex;
-<<<<<<< HEAD
-    justify-content: space-around;
-=======
     justify-content: center;
->>>>>>> main
     flex-direction: column;
     align-items: flex-start;
     align-self: flex-start;
     width: 50%;
-<<<<<<< HEAD
-    height: 40rem;
-    margin-bottom: 10rem;
-    margin-left: 2.5rem;
-}
-=======
     height: auto;
     margin-left: 2.5rem;
 }
@@ -74,7 +60,6 @@ body {
     font-size: 2.5rem;
     margin-bottom: 3rem;
 }
->>>>>>> main
 
 
 .info ul {
@@ -92,21 +77,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
-}
-
-#gallery h2 {
-    margin-left: 2.5rem;
-    margin-bottom: 10rem;
-    font-size: 6rem;
-    
-=======
     height: 30rem;
 }
 
 #gallery h2 {
     font-size: 6rem;
->>>>>>> main
 }
 
 
