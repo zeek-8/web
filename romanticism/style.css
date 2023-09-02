@@ -35,8 +35,11 @@ body {
 }
 
 .container-1 h1 {
+    display: flex;
     font-size: 7rem;
-    margin: 8rem 0rem;
+    height: 30rem;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -44,14 +47,18 @@ body {
 
 .info {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
     align-items: flex-start;
     align-self: flex-start;
     width: 50%;
-    height: 40rem;
-    margin-bottom: 10rem;
+    height: auto;
     margin-left: 2.5rem;
+}
+
+.info-paragraph {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
 }
 
 
@@ -70,13 +77,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 30rem;
 }
 
 #gallery h2 {
-    margin-left: 2.5rem;
-    margin-bottom: 10rem;
     font-size: 6rem;
-    
 }
 
 
