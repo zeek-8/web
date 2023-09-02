@@ -4,33 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blueprint</title>
     <link href="./first-page/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/xic6vle.css">
+    <title>ART</title>
 </head>
 <body>
-
-
+    <div class="black-screen"></div>
     <!-- Header -->
     <header>
         <!-- Nav Bar-->
         <nav>
             <div class="left-nav">
                 <div class="open-nav-menu-container">
-                    <img id="open-nav-menu-logo" class="open-nav-menu-logo" src="./images/menu.png">
+                    <img id="open-nav-menu-logo" class="open-nav-menu-logo" src="./first-page/images/menu.png">
                 </div>
             </div>
             <h1>ART</h1>
             <div class="right-nav">
                 <h2 id="log-in">Log in</h2>
-                <img id="log-in-logo" src="./images/log-in.png">
+                <img id="log-in-logo" src="./first-page/images/log-in.png">
             </div>
         </nav>
     </header>
     <!-- Interactive Nav Menu-->
     <div id="nav-menu" class="nav-menu">
         <div id="types-of-art-container">
-            <div class="nav-type-art"><a class="anchor-type-art" href="#Romanticism-title-container">Romanticism</a></div>
+            <div class="nav-type-art"><a class="anchor-type-art" href="./romanticism/index.html">Romanticism</a></div>
             <div class="nav-type-art"><a class="anchor-type-art" hreft="#">Classicism</a></div>
         </div>
     </div>
@@ -42,25 +41,10 @@
         </div>
         
         <!-- Container -->
-        <div class="container-3">
-            <div id="Romanticism-title-container">
-                <h2 id="Romanticism-title">Romanticism</h2>
-            </div>
-            <div id="Romanticism-paintings-container">
-                <img class="Romanticism-paint Romanticism-painting-one" src="./images/romanticism-1.jpg">
-                <img class="Romanticism-paint Romanticism-painting-two" src="./images/romanticism-2.jpg">
-                <img class="Romanticism-paint Romanticism-painting-three" src="./images/romanticism-3.jpg">
-            </div>
-        </div>
     </main>
 
     <!-- Footer-->
     <footer>
-        <div class="container-4">
-           
-            <h2>Footer</h2>
-            <p>(Place the footer)</p>
-        </div> 
     </footer>
 
 <!-- End -->
@@ -71,6 +55,7 @@
         const navMenu = document.getElementById("nav-menu")
         const typeContainer = document.getElementById("types-of-art-container")
         const typeArt = document.getElementsByClassName("anchor-type-art")
+        const blank = document.getElementsByClassName("black-screen")[0]
       
 
         function toggleNavMenu() {
@@ -80,12 +65,14 @@
                 typeContainer.style.opacity = "0"
                 navMenu.style.transition = "all 0.7s ease-in"
                 typeContainer.style.visibility = "hidden"
+                blank.style.opacity = "0"
                 
             } else {
                 navMenu.style.height = "30rem";
                 typeContainer.style.opacity = "1"
                 navMenu.style.transition = "all 0.4s"
                 typeContainer.style.visibility = "visible"
+                blank.style.opacity = "1"
                 
             } 
         }

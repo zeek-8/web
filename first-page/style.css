@@ -13,6 +13,16 @@ body {
 
 /*--------------------------------- NAV BAR  ---------------------------------*/
 
+.black-screen {
+    position: absolute;
+    z-index: 90;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0 0 0 / 50%);
+    opacity: 0;
+    transition: all 0.4s;
+}
+
 header {
     position: absolute;
     top: 0rem;
@@ -29,8 +39,6 @@ nav {
     width: 100%;
     backdrop-filter: blur(1rem);
 }
-
-
 
 .left-nav {
     display: inline-flex;
@@ -92,7 +100,7 @@ nav h1 {
     width: 275px;
     z-index: 100;
     backdrop-filter: blur(1rem);
-    background-color: rgba(240, 248, 255, 0.399);
+    background-color: rgb(228 242 255 / 67%);
 }
 
 #types-of-art-container {
@@ -116,7 +124,7 @@ nav h1 {
     cursor: pointer;
 }
 .nav-type-art:hover {
-    background-color: rgba(240, 248, 255, 0.562);
+    background-color: rgb(240 248 255 / 75%);
 }
 
 .nav-type-art a {
@@ -126,8 +134,6 @@ nav h1 {
     font-weight: 600;
 }
 
-
-
 /*--------------------------------- BANNER  ---------------------------------*/
 
 .container-2 {
@@ -136,66 +142,9 @@ nav h1 {
     align-items: center;
     height: 75rem;
     width: 100%;
-    background-image: url("../images/banner.jpg");
+    background-image: url("../first-page/images/banner.jpg");
     background-position: center;
     background-size: cover;
 }
 
 /*--------------------------------- MAIN  ---------------------------------*/
-
-
-
-.container-3 {
-    width: 100%;
-    height: 75rem;
-    background-color: rgb(255, 255, 255);
-}
-
-
-/*--------------------- Romanticism  ---------------------*/
-
-#Romanticism-title-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 14rem;
-    width: 100%;
-}
-
-#Romanticism-title {
-    font-size: 6rem;
-    font-weight: 500;
-    text-shadow: -1px 1px 3px;
-}
-
-#Romanticism-paintings-container {
-    display: flex;
-    height: 70%;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-}
-
-
-.Romanticism-paint {
-    height: auto;
-    width: 400px;
-    box-shadow: 0px 0px 1rem;
-
-}
-
-/*--------------------------------- FOOTER  ---------------------------------*/
-
-.container-4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 50rem;
-    width: 100%;
-    background-color: rgb(179, 145, 215);
-}
-
-.container-4 h2 {
-    font-size: 5rem;
-}
