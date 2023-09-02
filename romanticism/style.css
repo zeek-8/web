@@ -17,26 +17,67 @@ body {
 }
 
 .paragraph {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
+
+
+
 
 /*-----container-1-----*/
 
 .container-1 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 30rem;
+    height: auto;
     width: 100%;
 }
 
 .container-1 h1 {
     font-size: 7rem;
+    margin: 8rem 0rem;
 }
 
 
+/*-----info-----*/
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: flex-start;
+    width: 50%;
+    height: 40rem;
+    margin-bottom: 10rem;
+    margin-left: 2.5rem;
+}
 
 
+.info ul {
+    list-style-type: none;
+}
+
+.info-list-paragraph{
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+}
+
+/*-----gallery-----*/
+
+#gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gallery h2 {
+    margin-left: 2.5rem;
+    margin-bottom: 10rem;
+    font-size: 6rem;
+    
+}
 
 
 /*-----container-2-----*/
@@ -68,7 +109,12 @@ body {
 
 #paint-2 {
     height: auto;
-    width: 35rem;
+    width: 38rem;
+}
+
+#paint-3 {
+    height: auto;
+    width: 38rem;
 }
 
 .wrap-paragraph {
